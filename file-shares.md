@@ -15,6 +15,7 @@ In the server manager we have the option of going to "File and Storage Services"
 
 <img src="https://i.imgur.com/mpvoOFv.png">
 <br>
+<img src="https://i.imgur.com/ueKMIil.png">
 In this window we have several "profiles" to choose from.
 <li>SMB (Server Message Block) is the standard protocol for sharing files on windows. There's a quick, advanced and applications option to choose from.</li>
 <li>advanced only works with the file server resource manager and applications is used for hyper-v for example</li>
