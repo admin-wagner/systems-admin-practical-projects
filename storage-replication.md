@@ -26,4 +26,21 @@ After you set up the volumes on each server, make a folder on C:\ called "result
 
 <img src="https://i.imgur.com/YRwX0Nh.png">
 <br><br>
-This might take a while, but it will give you a report
+This might take a while, but it will give you a report on if replication is possible and how it would perform.
+<br><br>
+<img src="https://i.imgur.com/V9tjugo.png">
+<br><br>
+In my case it was very helpful to show me, that I needed to allow pinging in the firewall settings on SVR-1.
+
+<br><br>
+Everything else checked out though, so now we can create the Storage Replica Partnership in Powershell with this command:
+<br><br>
+<i>New-SRPartnership -SourceComputerName BLN-DC-1 -SourceRGName SR1 -SourceVolumeName R: -SourceLogVolumeName L: -DestinationComputerName SVR-1 -DestinationRGName SR2 -DestinationVolumeName R: -DestinationLogVolumeName L:</i>
+<br><br>
+"SR" meaning Storage Replica
+
+<img src="https://i.imgur.com/LOptfUS.png">
+<br><br>
+That's it! The data you put into your primary replication drive on your Source Computer will be replicated to your secondary on your other server. You will, however, not be able to write to the drive on your secondary, as it's meant to act as a failover drive.
+To make the secondary your into your primary (in case of disk failure of your primary for example) you can follow these steps:
+<br><br>
