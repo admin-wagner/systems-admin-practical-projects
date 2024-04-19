@@ -44,3 +44,10 @@ Everything else checked out though, so now we can create the Storage Replica Par
 That's it! The data you put into your primary replication drive on your Source Computer will be replicated to your secondary on your other server. You will, however, not be able to write to the drive on your secondary, as it's meant to act as a failover drive.
 To make the secondary your into your primary (in case of disk failure of your primary for example) you can follow these steps:
 <br><br>
+Go to the server that has the secondary, go to powershell and type in this command:
+<br>
+<i>Set-SRPartnership -NewSourceComputerName SVR-1 -SourceRGName SR2 -DestinationComputerName BLN-DC-1 -DestinationRGName SR1 </i>
+<br>
+<img src="https://i.imgur.com/IAbmWbV.png">
+<br><br>
+Confirm your choice and you will be able to access the replication drive on this secondary, which is now you primary.
