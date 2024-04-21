@@ -8,9 +8,9 @@ What now?
 
 <br><br>
 Open up cmd with "run as administrator" and enter the following:
-<br>
+<br><br>
 <i>takeown /f "path_to_file"</i>
-<br>
+<br><br>
 <img src="https://i.imgur.com/byrSnpY.png">
 <br><br>
-Now you granted yourself ownership of the file and you can access the security tab to make changes to permissions!
+Now you took ownership of the file and you can access the security tab to make changes to permissions!
