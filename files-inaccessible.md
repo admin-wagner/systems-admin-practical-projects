@@ -13,4 +13,9 @@ Open up cmd with "run as administrator" and enter the following:
 <br><br>
 <img src="https://i.imgur.com/byrSnpY.png">
 <br><br>
-Now you took ownership of the file and you can access the security tab to make changes to permissions!
+Follow this up with
+<br><br>
+<i>icacls "path_to_file" /grant administrators:F</i>
+<br><br>
+
+Now you took ownership of the file and gave the administrators full control over it. We are back in business.
