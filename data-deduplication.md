@@ -19,3 +19,18 @@ Importantly, you can choose to exclude file extensions and folders from deduplic
 databases. Performance slowdown being the main reason.
 So in this example I created a folder "Dont Dedup" and placed it into the excluded folders section.
 <img src="https://i.imgur.com/88CSm4r.png">
+<br>
+<br>
+To test out our deduplication storage saving magic, we're going to go into that settings window again, set the days to 0 and create a big file in our dedup folder and copy that file over to 2 other folders.
+<img src="https://i.imgur.com/KkUSZu0.png">
+<br> <br>
+Now let's trigger the deduplication manually by typing this command into powershell:
+<br>
+<i>Start-DedupJob -Volume E:\ Optimization </i>
+<br>
+It will run for a while and when it's done this is what we see:
+<br>
+<img src="https://i.imgur.com/RQP4ldq.png">
+<br>
+The data saving implications are big and interestingly, as we can see, the fact that this happened is hidden from the user himself. 
+Another little secret for the benevolent administrator...
