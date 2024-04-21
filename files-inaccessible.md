@@ -5,8 +5,12 @@ to give you his password and you're out of contact.
 What now?
 <br><br>
 <img src="https://i.imgur.com/x1TjVx7.png">
+
 <br><br>
-Let's look at the security tab...
-<img src="https://i.imgur.com/9TL01MD.png">
+Open up cmd with "run as administrator" and enter the following:
+<br>
+<i>takeown /f "path_to_file"</i>
+<br>
+<img src="https://i.imgur.com/byrSnpY.png">
 <br><br>
-Then to "advanced"...
+Now you granted yourself ownership of the file and you can access the security tab to make changes to permissions!
