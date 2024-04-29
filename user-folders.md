@@ -35,7 +35,7 @@ Edit this GPO and go here:
 
 Now follow these settings for your new mapped drive. Replace "BLN-DC-1" with the name of the server where your shared folder is located.
 
-![now do this](https://i.imgur.com/G3x7c0Z.png)
+![now do this](https://i.imgur.com/aPCPCPj.png)
 
 
 And that's it! Now as soon as you log in to the domain with a user account, a drive will be available for you and only you:
